@@ -36,6 +36,9 @@ module FullAdder4bit
     wire carry1in; // Connect carry outs to carry ins
     wire carry2in;
     wire carry3in;
+    wire carryoutXor;
+    wire msbXor;
+    wire nmsbXor;
 
     structuralFullAdder adder0(sum[0],carry1in,a[0],b[0],1'b0);
     structuralFullAdder adder1(sum[1],carry2in,a[1],b[1],carry1in);
@@ -43,6 +46,10 @@ module FullAdder4bit
     structuralFullAdder adder3(sum[3],carryout,a[3],b[3],carry3in);
 
     // An overflow has occured if the final carryout and the sum's
-    // most significant bit are not the same
-    `XOR overflowXor(overflow,carryout,sum[3]);
+    // most significant bit are not the same, if you're not adding
+    // a negative and positive number
+    `XOR carryoutXorGate(carryoutXor,carryout,sum[3]);
+    `XOR msbXorGate(msbXor, a[3], b[3]);
+    `NOT nmsbXorGate(nmsbXor, msbXor);
+    `AND overflowAndGate(overflow,nmsbXor,carryoutXor);
 endmodule
