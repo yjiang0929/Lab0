@@ -1,0 +1,538 @@
+$date
+	Tue Sep 25 23:40:37 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module behavioralFullAdder $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var wire 1 # carryin $end
+$var wire 1 $ sum $end
+$var wire 1 % carryout $end
+$upscope $end
+$scope module testFullAdder $end
+$var wire 4 & sum [3:0] $end
+$var wire 1 ' overflow $end
+$var wire 1 ( carryout $end
+$var reg 4 ) a [3:0] $end
+$var reg 4 * b [3:0] $end
+$scope module adder $end
+$var wire 4 + a [3:0] $end
+$var wire 4 , b [3:0] $end
+$var wire 1 ' overflow $end
+$var wire 4 - sum [3:0] $end
+$var wire 1 ( carryout $end
+$var wire 1 . carry3in $end
+$var wire 1 / carry2in $end
+$var wire 1 0 carry1in $end
+$scope module adder0 $end
+$var wire 1 1 A $end
+$var wire 1 2 AandB $end
+$var wire 1 3 AxorB $end
+$var wire 1 4 AxorBandC $end
+$var wire 1 5 B $end
+$var wire 1 6 carryin $end
+$var wire 1 0 carryout $end
+$var wire 1 7 sum $end
+$upscope $end
+$scope module adder1 $end
+$var wire 1 8 A $end
+$var wire 1 9 AandB $end
+$var wire 1 : AxorB $end
+$var wire 1 ; AxorBandC $end
+$var wire 1 < B $end
+$var wire 1 0 carryin $end
+$var wire 1 / carryout $end
+$var wire 1 = sum $end
+$upscope $end
+$scope module adder2 $end
+$var wire 1 > A $end
+$var wire 1 ? AandB $end
+$var wire 1 @ AxorB $end
+$var wire 1 A AxorBandC $end
+$var wire 1 B B $end
+$var wire 1 / carryin $end
+$var wire 1 . carryout $end
+$var wire 1 C sum $end
+$upscope $end
+$scope module adder3 $end
+$var wire 1 D A $end
+$var wire 1 E AandB $end
+$var wire 1 F AxorB $end
+$var wire 1 G AxorBandC $end
+$var wire 1 H B $end
+$var wire 1 . carryin $end
+$var wire 1 ( carryout $end
+$var wire 1 I sum $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+xI
+0H
+xG
+xF
+xE
+0D
+xC
+0B
+xA
+x@
+x?
+0>
+x=
+0<
+x;
+x:
+x9
+08
+x7
+06
+05
+x4
+x3
+x2
+01
+x0
+x/
+x.
+bx -
+b0 ,
+b0 +
+b0 *
+b0 )
+x(
+x'
+bx &
+x%
+x$
+z#
+z"
+z!
+$end
+#50000
+03
+02
+0:
+09
+0@
+0?
+0F
+0E
+04
+#100000
+bx0 &
+bx0 -
+07
+0;
+0A
+0G
+00
+#150000
+0/
+0.
+0(
+bx00 &
+bx00 -
+0=
+#200000
+0C
+b0 &
+b0 -
+0I
+#250000
+0'
+#5000000
+11
+b1 )
+b1 +
+#5050000
+13
+#5100000
+b1 &
+b1 -
+17
+#10000000
+15
+01
+b1 *
+b1 ,
+b0 )
+b0 +
+#15000000
+11
+b1 )
+b1 +
+#15050000
+03
+12
+#15100000
+b0 &
+b0 -
+07
+10
+#15150000
+b10 &
+b10 -
+1=
+#20000000
+05
+1<
+01
+18
+b10 *
+b10 ,
+b10 )
+b10 +
+#20050000
+02
+19
+#20100000
+00
+1/
+#20150000
+0=
+b100 &
+b100 -
+1C
+#25000000
+15
+08
+1>
+b11 *
+b11 ,
+b100 )
+b100 +
+#25050000
+13
+1:
+09
+1@
+#25100000
+17
+1=
+0/
+b11 &
+b11 -
+0C
+1A
+#25150000
+b111 &
+b111 -
+1C
+0A
+1.
+#25200000
+0.
+b1111 &
+b1111 -
+1I
+#25250000
+1'
+b111 &
+b111 -
+0I
+#25300000
+0'
+#30000000
+05
+0<
+1H
+0>
+1D
+b1000 *
+b1000 ,
+b1000 )
+b1000 +
+#30050000
+03
+0:
+0@
+1E
+#30100000
+07
+0=
+b0 &
+b0 -
+0C
+1(
+#30150000
+1'
+#35000000
+15
+b1001 *
+b1001 ,
+#35050000
+13
+#35100000
+b1 &
+b1 -
+17
+#40000000
+05
+11
+b1000 *
+b1000 ,
+b1001 )
+b1001 +
+#45000000
+15
+1<
+18
+b1011 *
+b1011 ,
+b1011 )
+b1011 +
+#45050000
+03
+12
+19
+#45100000
+b0 &
+b0 -
+07
+10
+1/
+#45150000
+1=
+b110 &
+b110 -
+1C
+#50000000
+05
+0<
+0H
+01
+08
+b0 *
+b0 ,
+b1000 )
+b1000 +
+#50050000
+1F
+0E
+02
+09
+#50100000
+b1110 &
+b1110 -
+1I
+0(
+00
+0/
+#50150000
+0=
+b1000 &
+b1000 -
+0C
+#55000000
+15
+b1 *
+b1 ,
+#55050000
+13
+#55100000
+b1001 &
+b1001 -
+17
+#60000000
+05
+11
+b0 *
+b0 ,
+b1001 )
+b1001 +
+#65000000
+15
+1<
+1B
+18
+1>
+b111 *
+b111 ,
+b1111 )
+b1111 +
+#65050000
+03
+12
+19
+1?
+#65100000
+b1000 &
+b1000 -
+07
+10
+1/
+1.
+#65150000
+1=
+1C
+b110 &
+b110 -
+0I
+1G
+#65200000
+0'
+1(
+#65250000
+1'
+#70000000
+1H
+08
+0>
+b1111 *
+b1111 ,
+b1001 )
+b1001 +
+#70050000
+0F
+1E
+1:
+09
+1@
+0?
+#70100000
+1I
+0G
+0=
+1;
+0/
+b1000 &
+b1000 -
+0C
+1A
+0.
+#70150000
+0'
+1/
+1C
+0A
+1.
+b100 &
+b100 -
+0I
+#70200000
+1'
+0C
+1A
+0.
+b1000 &
+b1000 -
+1I
+#70250000
+0'
+1.
+b0 &
+b0 -
+0I
+#70300000
+1'
+b1000 &
+b1000 -
+1I
+#70350000
+0'
+#75000000
+0<
+0B
+0H
+18
+1>
+0D
+b1 *
+b1 ,
+b111 )
+b111 +
+#75050000
+0E
+#75100000
+0(
+#75150000
+1'
+#80000000
+05
+08
+0>
+1D
+b0 *
+b0 ,
+b1001 )
+b1001 +
+#80050000
+13
+02
+0:
+0@
+1F
+#80100000
+17
+00
+1=
+0;
+1C
+0A
+b111 &
+b111 -
+0I
+1G
+#80150000
+0'
+b101 &
+b101 -
+0=
+0/
+0.
+1(
+#80200000
+0C
+b1001 &
+b1001 -
+1I
+0G
+1'
+#80250000
+0'
+0(
+#80300000
+1'
+#85000000
+15
+1<
+1B
+18
+1>
+b111 *
+b111 ,
+b1111 )
+b1111 +
+#85050000
+03
+12
+19
+1?
+#85100000
+b1000 &
+b1000 -
+07
+10
+1/
+1.
+#85150000
+1=
+1C
+b110 &
+b110 -
+0I
+1G
+#85200000
+0'
+1(
+#85250000
+1'
+#90000000
