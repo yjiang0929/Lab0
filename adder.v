@@ -5,18 +5,6 @@
 `define NOT not #50
 `define XOR xor #50
 
-module behavioralFullAdder
-(
-    output sum, 
-    output carryout,
-    input a, 
-    input b, 
-    input carryin
-);
-    // Uses concatenation operator and built-in '+'
-    assign {carryout, sum}=a+b+carryin;
-endmodule
-
 module structuralFullAdder
 (
     output sum, 
@@ -45,7 +33,7 @@ module FullAdder4bit
   input[3:0] a,     // First operand in 2's complement format
   input[3:0] b      // Second operand in 2's complement format
 );
-    wire carry1in;
+    wire carry1in; // Connect carry outs to carry ins
     wire carry2in;
     wire carry3in;
 
@@ -54,5 +42,7 @@ module FullAdder4bit
     structuralFullAdder adder2(sum[2],carry3in,a[2],b[2],carry2in);
     structuralFullAdder adder3(sum[3],carryout,a[3],b[3],carry3in);
 
+    // An overflow has occured if the final carryout and the sum's
+    // most significant bit are not the same
     `XOR overflowXor(overflow,carryout,sum[3]);
 endmodule
