@@ -24,6 +24,9 @@ initial begin
   $display("%b | %b | %b |   %b      |    %b     |  0001   | 0            | 0", a, b, sum, carryout, overflow);
   a = 4'b0100; b = 4'b0011; #`DELAY                                 // Set A and B, wait for update (#1)
   $display("%b | %b | %b |   %b      |    %b     |  0111   | 0            | 0", a, b, sum, carryout, overflow);
+  a = 4'b0111; b = 4'b0111; #`DELAY                                 // Set A and B, wait for update (#1)
+  $display("%b | %b | %b |   %b      |    %b     |  1110   | 0            | 1", a, b, sum, carryout, overflow);
+
 
   $display("\n\nFour Bit Full Adder negative + negative Tests");
   $display(" A   |  B   | Sum  | Carryout | Overflow | Sum Exp | Carryout Exp | Overflow Exp");            // Prints header for truth table
