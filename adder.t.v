@@ -58,7 +58,7 @@ initial begin
   a = 4'b1001; b = 4'b1111; #`DELAY
   $display("%b | %b | %b |   %b      |    %b     |  1000   | 1            | 0", a, b, sum, carryout, overflow);
   a = 4'b1111; b = 4'b1000; #`DELAY
-  $display("%b | %b | %b |   %b      |    %b     |  0110   | 1            | 1", a, b, sum, carryout, overflow);
+  $display("%b | %b | %b |   %b      |    %b     |  0111   | 1            | 1", a, b, sum, carryout, overflow);
   a = 4'b0111; b = 4'b0001; #`DELAY
   $display("%b | %b | %b |   %b      |    %b     |  1000   | 0            | 1", a, b, sum, carryout, overflow);
   a = 4'b0110; b = 4'b0001; #`DELAY
