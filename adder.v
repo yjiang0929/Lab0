@@ -1,5 +1,5 @@
 // Adder circuit
-
+// delay was removed when synthesized on FPGA
 `define AND and #50
 `define OR or #50
 `define NOT not #50
@@ -7,10 +7,10 @@
 
 module structuralFullAdder
 (
-    output sum, 
+    output sum,
     output carryout,
-    input A, 
-    input B, 
+    input A,
+    input B,
     input carryin
 );
     wire AxorB;
